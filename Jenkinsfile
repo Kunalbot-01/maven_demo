@@ -8,9 +8,7 @@ steps {
 }
     stage('build') {
     steps {
-        build(wait : 'mymaven'){
         sh "mvn clean install"
-    }
     }
 }
     stage('junit') {
