@@ -13,7 +13,7 @@ steps {
 }
     stage('junit') {
 steps {
-    junit healthScaleFactor: 10.0, testResults: '**/gameoflife-web/target/surefire-reports/*.xml'
+      echo "junit healthScaleFactor: 10.0, testResults: '**/gameoflife-web/target/surefire-reports/*.xml"
     }
 }
     stage('deploy') {
