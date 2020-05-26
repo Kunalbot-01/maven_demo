@@ -8,7 +8,7 @@ steps {
 }
     stage('build') {
     steps {
-        sh "mvn clean install"
+        echo "mvn clean install"
     }
 }
     stage('junit') {
