@@ -18,7 +18,7 @@ steps {
 }
     stage('deploy') {
 steps {
-     echo "bat 'copy "C:\\Program Files (x86)\\Jenkins\\workspace\\raghuproject\\gameoflife-web\\target\\*.war" "C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\webapps\\" 
+     echo "deploy" 
  }
 }
 }
