@@ -9,7 +9,7 @@ steps {
     stage('build') {
     steps {
         withMaven(maven : 'mymaven'){
-        bat "mvn clean install"
+        sh "mvn clean install"
     }
     }
 }
@@ -20,7 +20,7 @@ steps {
 }
     stage('deploy') {
 steps {
-    bat 'copy "C:\\Program Files (x86)\\Jenkins\\workspace\\raghuproject\\gameoflife-web\\target\\*.war" "C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\webapps\\"'
+    sh 'copy "C:\\Program Files (x86)\\Jenkins\\workspace\\raghuproject\\gameoflife-web\\target\\*.war" "C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\webapps\\"'
     }
 }
 }
